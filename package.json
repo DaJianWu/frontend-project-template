@@ -1,0 +1,24 @@
+{
+  "name": "project-20210925",
+  "version": "1.0.0",
+  "description": "从0开始搭建1个前端项目",
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "wudajian",
+  "license": "MIT",
+  "main": "src/index.js",
+  "homepage": "https://github.com/DaJianWu/project-20210925#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaJianWu/project-20210925.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DaJianWu/project-20210925/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
