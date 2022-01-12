@@ -19,6 +19,10 @@
     "url": "https://github.com/DaJianWu/project-20210925/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc-noemit": "tsc --noemit"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
   }
 }

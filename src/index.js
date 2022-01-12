@@ -1,1 +1,3 @@
-window.alert('hello world');
+"use strict";
+var variable = 'hello world';
+window.alert(variable);
