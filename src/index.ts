@@ -1,3 +1,3 @@
-const variable: string = 'hello world';
+const variable = 'hello world';
 
 window.alert(variable);
