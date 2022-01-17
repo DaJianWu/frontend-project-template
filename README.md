@@ -6,3 +6,4 @@
 4. 配置 .vscode/settings.json
 5. 添加 .editorconfig
 6. 添加 eslint
+7. 添加 stylelint
