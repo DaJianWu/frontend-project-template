@@ -17,7 +17,8 @@
   // 继承
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   // 插件
   "plugins": [
