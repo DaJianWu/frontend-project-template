@@ -3,3 +3,4 @@
 1. 添加 README LICENSE .gitignore
 2. 初始化 npm，添加 package.json package-lock.json
 3. 安装 typescript
+4. 配置 .vscode/settings.json
