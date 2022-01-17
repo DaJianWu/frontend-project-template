@@ -9,3 +9,4 @@
 7. 添加 stylelint
 8. 添加 prettier
 9. 添加 husky lint-staged
+10. 添加 commitlint
