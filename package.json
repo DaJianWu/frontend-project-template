@@ -31,9 +31,15 @@
     "prettier": "prettier ./**/*.{html,css,js,ts} --check",
     "lint": "npm run eslint && npm run stylelint && npm run prettier",
     "prepare": "husky install",
-    "postcss": "postcss src/**/*.css --base src --dir build"
+    "postcss": "postcss src/**/*.css --base src --dir build",
+    "babel": "babel src --out-dir lib"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
@@ -50,5 +56,10 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^24.0.0",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.2",
+    "core-js": "^3.21.0",
+    "regenerator-runtime": "^0.13.9"
   }
 }

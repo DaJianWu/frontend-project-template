@@ -1,0 +1,26 @@
+// https://www.babeljs.cn
+{
+  // 预设
+  "presets": [
+    [
+      "@babel/preset-env",
+      // 按需导入 polyfills (core-js regenerator-runtime)
+      {
+        "useBuiltIns": "usage",
+        "corejs": "3.6.5"
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  // 插件
+  "plugins": [
+    [
+      // 自动删除内联 babel helpers 并使用模块导入(@babel/runtime)
+      "@babel/plugin-transform-runtime",
+      {
+        // 不导入 polyfills (@babel/runtime-corejs3)
+        "corejs": false
+      }
+    ]
+  ]
+}
