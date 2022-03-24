@@ -1,3 +1,4 @@
-body {
-  color: pink;
+.hello {
+  color: red;
+  background: url('./1024.jpg');
 }
