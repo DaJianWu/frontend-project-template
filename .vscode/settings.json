@@ -5,10 +5,25 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+  ],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "scss",
+  ],
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {

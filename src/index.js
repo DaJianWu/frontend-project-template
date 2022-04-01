@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import printMe from './index.ts';
 import './index.css';
-import Icon from './1024.jpg';
+import Img from './1024.jpg';
 
 function component() {
   const element = document.createElement('div');
@@ -15,10 +15,10 @@ function component() {
 
   element.appendChild(btn);
 
-  const myIcon = new Image();
-  myIcon.src = Icon;
+  const myImg = new Image();
+  myImg.src = Img;
 
-  element.appendChild(myIcon);
+  element.appendChild(myImg);
 
   return element;
 }

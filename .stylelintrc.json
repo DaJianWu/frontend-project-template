@@ -3,8 +3,25 @@
     "stylelint-config-standard",
     "stylelint-config-prettier"
   ],
-  "rules": {},
+  "overrides": [
+    {
+      "files": [
+        "*.less",
+        "**/*.less"
+      ],
+      "customSyntax": "postcss-less"
+    },
+    {
+      "files": [
+        "*.scss",
+        "**/*.scss"
+      ],
+      "customSyntax": "postcss-scss"
+    }
+  ],
   "ignoreFiles": [
-    "node_modules/"
-  ]
+    "node_modules/",
+    "dist/"
+  ],
+  "rules": {}
 }

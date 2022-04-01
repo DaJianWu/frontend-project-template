@@ -15,7 +15,7 @@
   // 插件
   "plugins": [
     [
-      // 自动删除内联 babel helpers 并使用模块导入(@babel/runtime)
+      // 自动删除内联 babel helpers 并使用模块导入 (@babel/runtime)
       "@babel/plugin-transform-runtime",
       {
         // 不导入 polyfills (@babel/runtime-corejs3)

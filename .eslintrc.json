@@ -1,5 +1,6 @@
 // https://eslint.bootcss.com
 {
+  // 根目录
   "root": true,
   // 环境
   "env": {

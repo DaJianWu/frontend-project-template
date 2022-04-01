@@ -43,6 +43,11 @@ module.exports = (env, argv) => {
       static: path.resolve(__dirname, 'public'),
       open: true,
       hot: true,
+      historyApiFallback: true,
+    },
+    // 解析
+    resolve: {
+      extensions: ['.js', '.ts'],
     },
     // 优化
     optimization: {
