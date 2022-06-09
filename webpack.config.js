@@ -100,18 +100,20 @@ module.exports = (env, argv) => {
         template: path.resolve(__dirname, 'public/index.html'),
       }),
       new MiniCssExtractPlugin(),
-      new CopyPlugin({
-        patterns: [
-          {
-            from: path.resolve(__dirname, 'public'),
-            to: path.resolve(__dirname, 'dist'),
-            toType: 'dir',
-            globOptions: {
-              ignore: ['**/index.html'],
+      (isEnvProduction &&
+        new CopyPlugin({
+          patterns: [
+            {
+              from: path.resolve(__dirname, 'public'),
+              to: path.resolve(__dirname, 'dist'),
+              toType: 'dir',
+              globOptions: {
+                ignore: ['**/index.html'],
+              },
             },
-          },
-        ],
-      }),
+          ],
+        })) ||
+        (isEnvDevelopment && (() => {})),
       (isEnvProduction && new BundleAnalyzerPlugin.BundleAnalyzerPlugin()) ||
         (isEnvDevelopment && (() => {})),
     ],
