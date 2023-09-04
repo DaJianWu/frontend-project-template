@@ -18,24 +18,19 @@
   "bugs": {
     "url": "https://github.com/DaJianWu/project-20210925/issues"
   },
-  "lint-staged": {
-    "*.{js,ts}": "eslint --fix",
-    "*.{css,less,scss}": "stylelint --fix",
-    "*.": "prettier --write"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --env APP_ENV=dev",
     "build": "webpack build --env APP_ENV=prod",
     "debug": "webpack build --env APP_ENV=debug",
-    "type-check": "tsc --noemit",
+    "tsc": "tsc --outDir ts-dist",
+    "postcss": "postcss src/**/*.{css,less,scss} --base src --dir build",
+    "babel": "babel src --extensions .js,.ts --out-dir lib",
     "eslint": "eslint src/**/*.{js,ts}",
     "stylelint": "stylelint src/**/*.{css,less,scss}",
-    "prettier": "prettier src/**/* --check",
+    "prettier": "prettier src/**/*.{js,ts,css,less,scss} --check",
     "lint": "npm run eslint && npm run stylelint && npm run prettier",
-    "prepare": "husky install",
-    "postcss": "postcss src/**/*.{css,less,scss} --base src --dir build",
-    "babel": "babel src --extensions .js,.ts --out-dir lib"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/cli": "7.x",

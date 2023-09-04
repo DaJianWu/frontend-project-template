@@ -1,7 +1,5 @@
 // https://webpack.docschina.org
 
-/* eslint-disable */
-
 const path = require('path');
 
 const webpack = require('webpack');
@@ -30,9 +28,7 @@ const developmentConfig = {
     proxy: {},
   },
   // 插件
-  plugins: [
-    new webpack.ProgressPlugin(),
-  ],
+  plugins: [new webpack.ProgressPlugin()],
 };
 
 /**
@@ -45,9 +41,7 @@ const productionConfig = {
   // 调试
   devtool: false,
   // 插件
-  plugins: [
-    new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
-  ],
+  plugins: [new BundleAnalyzerPlugin.BundleAnalyzerPlugin()],
 };
 
 /**
@@ -126,7 +120,12 @@ function getCommonConfig(env) {
         },
         {
           test: /\.less$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'less-loader'],
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'postcss-loader',
+            'less-loader',
+          ],
         },
         {
           test: /\.s[ac]ss$/,
@@ -178,8 +177,8 @@ function getCommonConfig(env) {
     stats: {
       colors: true,
     },
-  }
-};
+  };
+}
 
 /**
  * @returns {import('webpack').Configuration}

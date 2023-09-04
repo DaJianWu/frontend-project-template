@@ -1,4 +1,3 @@
-// https: //aka.ms/tsconfig.json
 {
   "compilerOptions": {
     "target": "es5",
