@@ -1,3 +1,5 @@
+# [已迁移至 react-web](https://github.com/DaJianWu/react-web)
+
 # 从0开始搭建1个前端项目
 
 1. 添加 README LICENSE .gitignore
